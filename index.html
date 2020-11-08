@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Burggers</title>
+    <link rel="shortcut icon" href="./assets/burger-logo.png">
+    <link type="text/css" rel="stylesheet" href="./assets/css/materialize.css" media="screen,projection" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="z-depth-2">
+        <div class="container">
+            <a href="#" id="logo"><img src="./assets/burger-logo.png" alt="burger-logo" height="50px"></a>
+            <ul class="right">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+            <!-- mobile nav -->
+        </div>
+        <ul class="botnav">
+            <li><a href="#home"><img href="#home" src="./assets/home.svg" alt="home-icon" width="20px"></a></li>
+            <li><a href="#order"><img href="#order" src="./assets/loupe.svg" alt="order-icon" width="20px"></a></li>
+            <li><a href="#cart"><img href="#cart" src="./assets/cart.svg" alt="cart-icon" width="20px"></a></li>
+            <li><a href="#login"><img href="#login" src="./assets/user.svg" alt="login-icon" width="20px"></a></li>
+        </ul>
+    </nav>
+    <!-- end of navbar -->
+    <div id="body-content"></div>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/materialize.js"></script>
+    <script src="./assets/js/nav.js"></script>
+    <script>
+        // REGISTER SERVICE WORKER
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function () {
+                navigator.serviceWorker
+                    .register("./service-worker.js")
+                    .then(function () {
+                        console.log("Pendaftaran ServiceWorker berhasil");
+                    })
+                    .catch(function () {
+                        console.log("Pendaftaran ServiceWorker gagal");
+                    });
+            });
+        } else {
+            console.log("ServiceWorker belum didukung browser ini.");
+        }
+    </script>
+</body>
+
+</html>
