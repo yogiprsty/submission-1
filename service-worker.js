@@ -27,7 +27,8 @@ const urlsToCache = [
     './assets/js/jquery.min.js',
     './assets/js/materialize.js',
     './assets/js/nav.js',
-    './assets/js/script.js'
+    './assets/js/script.js',
+    './manifest.json'
 ]
 
 self.addEventListener("install", function (event) {
