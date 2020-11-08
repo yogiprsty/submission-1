@@ -1,8 +1,8 @@
 const CACHE_NAME = 'webpwa';
 const urlsToCache = [
+    'https://fonts.gstatic.com/s/karla/v13/qkBbXvYC6trAT7RVLtyU5rZP.woff2',
+    'https://fonts.gstatic.com/s/materialicons/v67/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2?ce=43710006',
     './',
-    'https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap',
-    'https://fonts.googleapis.com/icon?family=Material+Icons',
     './index.html',
     './pages/cart.html',
     './pages/home.html',
@@ -12,7 +12,7 @@ const urlsToCache = [
     './assets/burger-logo.png',
     './assets/fb.png',
     './assets/google.png',
-    './assets/hero-image.png',
+    './assets/hero-image.jpg',
     './assets/cart.svg',
     './assets/home.svg',
     './assets/loupe.svg',

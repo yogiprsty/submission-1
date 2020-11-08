@@ -6,5 +6,3 @@ $('#body-content .tabs a').click(function(e){
     $('.card-content div').css('display', 'none')
     $(target).css('display', 'block');
 });
-
-// order
