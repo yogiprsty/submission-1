@@ -17,17 +17,17 @@ const urlsToCache = [
     './assets/home.svg',
     './assets/loupe.svg',
     './assets/user.svg',
-    './burger/cheese.png',
-    './burger/dbl-cheese.png',
-    './burger/drink.png',
-    './burger/fries.png',
-    './burger/spicy.png',
-    './css/materialize.css',
-    './css/style.css',
-    './js/jquery.min.js',
-    './js/materialize.js',
-    './js/nav.js',
-    './js/script.js'
+    './assets/burger/cheese.png',
+    './assets/burger/dbl-cheese.png',
+    './assets/burger/drink.png',
+    './assets/burger/fries.png',
+    './assets/burger/spicy.png',
+    './assets/css/materialize.css',
+    './assets/css/style.css',
+    './assets/js/jquery.min.js',
+    './assets/js/materialize.js',
+    './assets/js/nav.js',
+    './assets/js/script.js'
 ]
 
 self.addEventListener("install", function (event) {
